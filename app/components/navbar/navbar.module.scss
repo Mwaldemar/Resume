@@ -1,6 +1,80 @@
 .navigation {
   background-color: var(--eggWhite);
   border-bottom: 1px solid var(--black);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  .searchBar {
+    display: flex;
+    align-items: center;
+    position: relative;
+
+    .search {
+      padding: 10px;
+      display: flex;
+      align-content: center;
+      border-radius: 50px;
+
+      .searchInput {
+        all: unset;
+        border-bottom: 1px solid var(--black);
+        margin-left: 8px;
+
+        &::-webkit-search-cancel-button {
+          -webkit-appearance: none;
+          appearance: none;
+        }
+
+        &::-ms-clear {
+          display: none;
+        }
+      }
+    }
+
+    .searchResultsContainer {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background-color: white;
+      border: 1px solid var(--black);
+      z-index: 10;
+      padding: 10px;
+
+      .searchResults {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+
+        .noMatches {
+          cursor: default;
+        }
+
+        > li {
+          padding: 5px;
+          cursor: pointer;
+
+          .searchResultLink {
+            display: block;
+            text-decoration: none;
+            color: black;
+            font-size: 1rem;
+
+            .projectLink {
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+
+              &:hover {
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 
   .linkContainer {
     display: flex;
@@ -8,6 +82,7 @@
     align-items: center;
     justify-content: flex-start;
     margin: 0;
+    padding: 0;
 
     .navItem {
       list-style-type: none;
@@ -21,7 +96,7 @@
       .link {
         color: var(--black);
         text-decoration: none;
-        font-size: 1.3rem;
+        font-size: 1.1rem;
         position: relative;
         display: inline-block;
 
