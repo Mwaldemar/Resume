@@ -1,2 +1,18 @@
-.headerWrapper {
+.headerContainer {
+  background-color: var(--black);
+  padding: 20px;
+
+  .headerLink {
+    text-decoration: none;
+    .headerTitle {
+      color: white;
+      text-align: center;
+      padding: 10px;
+      margin: 0 auto;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
 }

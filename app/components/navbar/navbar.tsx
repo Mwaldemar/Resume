@@ -9,17 +9,17 @@ export const Navbar = () => {
             <ul className={styles.linkContainer}>
                 <li className={styles.navItem}>
                     <Link href="/" className={clsx(styles.link)}>
-                        Home
+                        <p className={styles.linkText}>Home</p>
                     </Link>
                 </li>
                 <li className={styles.navItem}>
                     <Link href="/projects" className={clsx(styles.link)}>
-                        Projects
+                        <p className={styles.linkText}>Projects</p>
                     </Link>
                 </li>
                 <li className={styles.navItem}>
                     <Link href="/contact" className={clsx(styles.link)}>
-                        Contact
+                        <p className={styles.linkText}>Contact</p>
                     </Link>
                 </li>
             </ul>
