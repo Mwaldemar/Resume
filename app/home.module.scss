@@ -6,15 +6,19 @@
   .heroContainer {
     width: 70%;
     margin: 100px auto;
+    display: flex;
+    flex-direction: row;
+    gap: 95px;
 
     .hero {
       width: 25%;
       background-color: white;
       position: relative;
       padding: 5px 15px;
-      border: 4px solid var(--orange);
+      border: 4px solid var(--blue);
       box-shadow: 4px 6px 15px rgba(0, 0, 0, 0.3);
       min-width: 295px;
+      border-radius: 10px;
 
       .pictureContainer {
         display: flex;
@@ -22,10 +26,10 @@
 
         .picture {
           border-radius: 100px;
-          transform: translateY(-50%);
+          transform: translateY(-55%);
           box-shadow: 4px 6px 15px rgba(0, 0, 0, 0.3);
           position: relative;
-          border: 4px solid var(--orange);
+          border: 4px solid var(--blue);
           object-fit: cover;
         }
       }
@@ -37,38 +41,6 @@
 
         > h3 {
           text-align: center;
-        }
-
-        .email {
-          display: flex;
-          flex-direction: row;
-          align-items: center;
-          margin-bottom: 8px;
-
-          .svg {
-            margin-right: 5px;
-            display: flex;
-            background-color: var(--orange);
-            padding: 5px;
-            border-radius: 100px;
-            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-          }
-
-          .mailAddress {
-            font-size: 16px;
-            font-weight: bold;
-
-            > .linkedin {
-              display: flex;
-              align-items: center;
-              text-decoration: none;
-              color: black;
-
-              &:hover {
-                text-decoration: underline;
-              }
-            }
-          }
         }
       }
 
@@ -99,11 +71,20 @@
         padding-bottom: 5px;
 
         .hobbyIcons {
-          background-color: var(--orange);
+          background-color: var(--blue);
           padding: 5px;
           border-radius: 100px;
           box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+          color: var(--eggWhite);
         }
+      }
+    }
+
+    .info {
+      width: 75%;
+
+      .educationHeader {
+        margin: 0;
       }
     }
   }

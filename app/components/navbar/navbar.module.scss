@@ -3,7 +3,7 @@
   border-bottom: 1px solid var(--black);
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
 
   .searchBar {
     display: flex;
@@ -107,7 +107,7 @@
           bottom: -2px;
           width: 100%;
           height: 2px;
-          background-color: var(--orange);
+          background-color: var(--blue);
           transform: scaleX(0);
           transform-origin: left;
           transition: transform 0.15s ease-in;

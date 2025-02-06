@@ -1,0 +1,31 @@
+.email {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 8px;
+
+  .svg {
+    margin-right: 5px;
+    display: flex;
+    color: var(--eggWhite);
+    background-color: var(--blue);
+    padding: 5px;
+    border-radius: 100px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  }
+
+  .mailAddress {
+    font-size: 16px;
+
+    > .linkedin {
+      display: flex;
+      align-items: center;
+      text-decoration: none;
+      color: black;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
