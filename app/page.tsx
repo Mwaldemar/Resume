@@ -1,10 +1,10 @@
-"use client"
 import React from "react";
 import styles from './home.module.scss'
 import Image from "next/image";
-import Link from "next/link";
-import { Computer, Gamepad2, Linkedin, Mail, MapPin, MoveUpRight, Music, Phone, PlaneTakeoff } from "lucide-react";
+import { Computer, Gamepad2, Linkedin, Mail, MapPin, Music, Phone, PlaneTakeoff } from "lucide-react";
 import ProgressBar from "./components/progressBar/progressBar";
+import Contact from "./components/contact/contact";
+import { Education } from "./components/education/education";
 
 const personalInfo = [
   { icon: <Mail />, text: 'mikkelwaldemar@gmail.com', link: '' },
@@ -33,29 +33,22 @@ const hobbies = [
   { icon: <Computer /> },
 ]
 
+const education = [
+  { year: "2020-2025", level: "Bachelor's Degree", educationName: "Global Business Engineering", specialization: "Software", school: "VIA University College" }
+]
+
 export default function Home() {
   return (
     <div className={styles.container}>
       <div className={styles.heroContainer}>
         <div className={styles.hero}>
           <div className={styles.pictureContainer}>
-            <Image className={styles.picture} width={150} height={150} alt={""} src={"/mikkel2.jpg"} />
+            <Image className={styles.picture} width={150} height={150} alt={""} src={"/mikkel4.jpg"} />
           </div>
           <div className={styles.personalInfo}>
             <h3>Contact</h3>
             {personalInfo.map((info, index) => (
-              <div key={index} className={styles.email}>
-                <div className={styles.svg}>
-                  {info.icon}
-                </div>
-                <div className={styles.mailAddress}>
-                  {info.link ? (
-                    <Link className={styles.linkedin} href={info.link} target="_blank" rel="noopener noreferrer">{info.text} <MoveUpRight /></Link>
-                  ) : (
-                    info.text
-                  )}
-                </div>
-              </div>
+              <Contact key={index} icon={info.icon} text={info.text} link={info.link} />
             ))}
           </div>
           <div>
@@ -83,6 +76,18 @@ export default function Home() {
           </div>
         </div>
         <div className={styles.info}>
+          <h3 className={styles.educationHeader}>Education</h3>
+          {education.map((edu, index) => (
+            <Education
+              key={index}
+              year={edu.year}
+              level={edu.level}
+              educationName={edu.educationName}
+              specialization={edu.specialization}
+              school={edu.school}
+            ></Education>
+          ))}
+
         </div>
       </div>
     </div >
