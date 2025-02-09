@@ -1,0 +1,32 @@
+.accordionWrapper {
+  margin: 0;
+  width: 100%;
+  position: relative;
+
+  .content {
+    display: block;
+    height: 0;
+    opacity: 0;
+    padding: 0;
+    transition: height 0.2s ease, opacity 0.2s ease, padding 0.2s ease;
+    visibility: hidden;
+  }
+
+  .checkbox {
+    display: none;
+
+    &:checked ~ .content {
+      height: auto;
+      opacity: 1;
+      padding: 10px 0px 10px 0px;
+      visibility: visible;
+    }
+  }
+
+  .trigger {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+  }
+}
