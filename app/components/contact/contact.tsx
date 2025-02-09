@@ -11,7 +11,7 @@ type ContactProps = {
 
 const Contact = ({ icon, text, link }: ContactProps) => {
     return (
-        <div className={styles.email}>
+        <div className={styles.contact}>
             <div className={styles.svg}>{icon}</div>
             <div className={styles.mailAddress}>
                 {link ? (

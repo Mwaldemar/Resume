@@ -5,6 +5,8 @@ import { Computer, Gamepad2, Linkedin, Mail, MapPin, Music, Phone, PlaneTakeoff 
 import ProgressBar from "./components/progressBar/progressBar";
 import Contact from "./components/contact/contact";
 import { Education } from "./components/education/education";
+import { GBE } from "./descriptions/GBE/GBE";
+import { Experience } from "./components/experience/experience";
 
 const personalInfo = [
   { icon: <Mail />, text: 'mikkelwaldemar@gmail.com', link: '' },
@@ -19,7 +21,7 @@ const languages = [
 ];
 
 const skills = [
-  { skill: 'React', level: 80 },
+  { skill: 'React.js', level: 80 },
   { skill: 'TypeScript', level: 80 },
   { skill: 'JavaScript', level: 60 },
   { skill: 'Web Design', level: 70 },
@@ -33,8 +35,13 @@ const hobbies = [
   { icon: <Computer /> },
 ]
 
-const education = [
-  { year: "2020-2025", level: "Bachelor's Degree", educationName: "Global Business Engineering", specialization: "Software", school: "VIA University College" }
+const educations = [
+  { id: "GBE", year: "2020-2025", level: "Bachelor's Degree", degree: "Global Business Engineering", specialization: "Software", school: "VIA University College", description: <GBE /> },
+]
+
+const experience = [
+  { id: "Trendhim", position: "Frontend Software Engineer", place: "Trendhim", type: "Internship", year: "2024", duration: "5 months", description: "Ad" },
+  { id: "Randers Tegl", position: "Production Employee", place: "Randers Tegl", type: "Full time", year: "2016-2018 & 2019-2020", duration: "2 years, 11 months", description: "Ad" },
 ]
 
 export default function Home() {
@@ -76,18 +83,26 @@ export default function Home() {
           </div>
         </div>
         <div className={styles.info}>
-          <h3 className={styles.educationHeader}>Education</h3>
-          {education.map((edu, index) => (
-            <Education
-              key={index}
-              year={edu.year}
-              level={edu.level}
-              educationName={edu.educationName}
-              specialization={edu.specialization}
-              school={edu.school}
-            ></Education>
-          ))}
-
+          <div className={styles.infoContainer}>
+            <h3 className={styles.infoHeader}>Education</h3>
+            {educations.map(education => (
+              <Education
+                className={styles.education}
+                key={education.id}
+                {...education}
+              />
+            ))}
+          </div>
+          <div className={styles.infoContainer}>
+            <h3 className={styles.infoHeader}>Experience</h3>
+            {experience.map(exp => (
+              <Experience
+                className={styles.experience}
+                key={exp.id}
+                {...exp}
+              />
+            ))}
+          </div>
         </div>
       </div>
     </div >

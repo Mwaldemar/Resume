@@ -19,6 +19,7 @@
       box-shadow: 4px 6px 15px rgba(0, 0, 0, 0.3);
       min-width: 295px;
       border-radius: 10px;
+      height: fit-content;
 
       .pictureContainer {
         display: flex;
@@ -83,8 +84,18 @@
     .info {
       width: 75%;
 
-      .educationHeader {
-        margin: 0;
+      .infoContainer {
+        border-bottom: 1px solid var(--black);
+        margin-bottom: 50px;
+        width: 100%;
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+
+        .infoHeader {
+          margin: 0;
+        }
       }
     }
   }

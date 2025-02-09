@@ -1,0 +1,59 @@
+.experienceContainer {
+  margin: 10px 0;
+  padding: 10px 0;
+  width: 100%;
+
+  .expHeader {
+    margin: 5px 0;
+  }
+
+  .accordion {
+    padding: 5px 0;
+    width: 100%;
+
+    input[type="checkbox"] {
+      ~ label svg {
+        .verticalLine {
+          transform-origin: center;
+          transition: transform 0.2s ease-in-out;
+        }
+      }
+
+      &:checked {
+        ~ label {
+          .description {
+            border-bottom: 1px solid transparent;
+          }
+          ~ div {
+            border-bottom: 1px solid var(--lightGray);
+          }
+        }
+        ~ label svg {
+          .verticalLine {
+            transition: transform 0.2s ease-in-out;
+            transform: rotate(90deg);
+          }
+        }
+      }
+    }
+
+    .description {
+      display: flex;
+      padding: 5px 0;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid var(--lightGray);
+      border-top: 1px solid var(--lightGray);
+      width: 100%;
+
+      &:hover {
+        > svg {
+          .verticalLine,
+          .horizontalLine {
+            stroke: var(--blue);
+          }
+        }
+      }
+    }
+  }
+}
