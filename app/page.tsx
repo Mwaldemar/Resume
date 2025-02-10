@@ -7,6 +7,7 @@ import Contact from "./components/contact/contact";
 import { Education } from "./components/education/education";
 import { GBE } from "./descriptions/GBE/GBE";
 import { Experience } from "./components/experience/experience";
+import { Trendhim } from "./descriptions/Trendhim/trendhim";
 
 const personalInfo = [
   { icon: <Mail />, text: 'mikkelwaldemar@gmail.com', link: '' },
@@ -40,8 +41,9 @@ const educations = [
 ]
 
 const experience = [
-  { id: "Trendhim", position: "Frontend Software Engineer", place: "Trendhim", type: "Internship", year: "2024", duration: "5 months", description: "Ad" },
-  { id: "Randers Tegl", position: "Production Employee", place: "Randers Tegl", type: "Full time", year: "2016-2018 & 2019-2020", duration: "2 years, 11 months", description: "Ad" },
+  { id: "Trendhim", position: "Frontend Software Engineer", place: "Trendhim", type: "Internship", year: "2024", duration: "5 months", description: <Trendhim /> },
+  { id: "Randers Tegl", position: "Production Employee", place: "Carlsberg Bjælker, Randers Tegl", type: "Full time", year: "2016-2018 & 2019-2020", duration: "2 years, 11 months" },
+  { id: "Rema", position: "Cashier", place: "Rema 1000", type: "Student Worker", year: "2011-2013", duration: "1 year, 7 months" },
 ]
 
 export default function Home() {
