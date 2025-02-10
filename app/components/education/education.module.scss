@@ -46,6 +46,10 @@
       border-top: 1px solid var(--lightGray);
       width: 100%;
 
+      > svg {
+        transition: stroke 0.3s ease-in-out;
+      }
+
       &:hover {
         > svg {
           .verticalLine,

@@ -51,6 +51,7 @@
           .verticalLine,
           .horizontalLine {
             stroke: var(--blue);
+            transition: stroke 0.2s ease-in-out;
           }
         }
       }

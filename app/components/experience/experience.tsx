@@ -1,4 +1,4 @@
-import React from "react";
+import React, { ReactNode } from "react";
 import clsx from "clsx";
 import styles from './experience.module.scss'
 import { Accordion } from "../accordion/accordion";
@@ -11,7 +11,7 @@ type ExperienceProps = {
     type: string,
     year: string,
     duration: string,
-    description: string,
+    description?: ReactNode,
 }
 
 export const Experience = ({ className, id, position, type, year, duration, description, place }: ExperienceProps) => {

@@ -7,9 +7,10 @@ export const GBE = () => {
             <div>Courses regarding Software Development:</div>
             <ul>
                 <li>Web development: React.js, TypeScript, JavaScript, HTML, CSS/SCSS, UX & Usability Design</li>
-                <li>Database management: PostgreSQL & SQLite</li>
-                <li>Software development: Java & C# with .NET</li>
+                <li>Database management: PostgreSQL, SQLite</li>
+                <li>Software development: Java, C# with .NET</li>
                 <li>Machine Learning & AI</li>
+                <li>Software Engineering: Scrum, Design Principles, Design Diagrams</li>
                 <li>Git</li>
             </ul>
 
@@ -23,8 +24,6 @@ export const GBE = () => {
             </ul>
 
             <p>All semesters, courses were combined to do interdisciplinary projects.</p>
-
-            <p>Study abroad at University of Nicosia, Cyprus.</p>
 
             <p>Internship as Frontend Software Engineer in Trendhim.</p>
         </div>

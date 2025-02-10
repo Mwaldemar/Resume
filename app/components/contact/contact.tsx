@@ -1,5 +1,4 @@
 import React from 'react';
-import Link from 'next/link';
 import styles from './contact.module.scss';
 import { MoveUpRight } from 'lucide-react';
 
@@ -15,9 +14,9 @@ const Contact = ({ icon, text, link }: ContactProps) => {
             <div className={styles.svg}>{icon}</div>
             <div className={styles.mailAddress}>
                 {link ? (
-                    <Link className={styles.linkedin} href={link} target="_blank" rel="noopener noreferrer">
+                    <a className={styles.linkedin} href={link} target="_blank" rel="noopener noreferrer">
                         {text} <MoveUpRight />
-                    </Link>
+                    </a>
                 ) : (
                     text
                 )}
