@@ -14,23 +14,11 @@
       padding: 20px 0;
       margin: 0 auto;
       width: fit-content;
-      animation: scaleUp 1.5s ease;
 
       &:hover {
         text-decoration: underline;
         cursor: pointer;
       }
     }
-  }
-}
-
-@keyframes scaleUp {
-  0% {
-    transform: scale(0);
-    opacity: 0;
-  }
-  100% {
-    transform: scale(1);
-    opacity: 1;
   }
 }
