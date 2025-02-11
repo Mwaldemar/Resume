@@ -1,0 +1,13 @@
+.container {
+  width: 100%;
+
+  .projectContainer {
+    width: 50%;
+    margin: 100px auto;
+
+    .projectPreview > a {
+      text-decoration: none;
+      color: black;
+    }
+  }
+}
