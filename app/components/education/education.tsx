@@ -17,7 +17,7 @@ type EducationProps = {
 export const Education = ({ className, id, year, level, degree, specialization, school, description }: EducationProps) => {
     return (
         <div className={clsx(className, styles.educationContainer)}>
-            <h4 className={styles.eduHeader}>{school}</h4>
+            <div className={styles.eduHeader}>{school}</div>
             <div>{level}</div>
             <div>{degree}
                 {specialization && (

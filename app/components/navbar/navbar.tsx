@@ -3,7 +3,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 import clsx from "clsx";
 import styles from './navbar.module.scss'
-import { ChevronRight, Search } from "lucide-react";
+import { ChevronRight, Search, X } from "lucide-react";
 import { ProjectMetadata } from "@/components/ProjectMetadata";
 
 type NavbarProps = {
@@ -55,7 +55,9 @@ export const Navbar = ({ projects }: NavbarProps) => {
                         type="search"
                         placeholder="Search..."
                     />
-
+                    {query && (
+                        <X className={styles.clearIcon} onClick={() => setQuery("")} />
+                    )}
                 </div>
                 {query && (
                     <div className={styles.searchResultsContainer}>

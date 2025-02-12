@@ -3,7 +3,7 @@ title: "Bachelor Project"
 subtitle: "Improvement of conversion rate for Trendhim through category breakdown"
 ---
 
-### **Bachelor Project**
+### Overall objective: Improve conversion rate for Trendhim through category breakdown
 
 In my first week at Trendhim, I dove headfirst into a lot of new programs, services, and faces. It was a bit overwhelming at first, but what stood out was the laid-back vibe and the incredibly helpful team.
 

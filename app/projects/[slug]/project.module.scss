@@ -4,6 +4,7 @@
   align-items: center;
   text-decoration: none;
   color: var(--black);
+  width: fit-content;
 
   &:hover {
     text-decoration: underline;
@@ -12,4 +13,9 @@
   p {
     margin-left: 5px;
   }
+}
+
+.contentContainer {
+  width: 95%;
+  margin: 0 auto;
 }
