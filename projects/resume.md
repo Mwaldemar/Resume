@@ -1,9 +1,7 @@
 ---
-title: "Another Project"
-subtitle: "Semester project"
+title: "Resume"
+subtitle: "Development of this online resume"
 ---
-
-### **Bachelor Project**
 
 In my first week at Trendhim, I dove headfirst into a lot of new programs, services, and faces. It was a bit overwhelming at first, but what stood out was the laid-back vibe and the incredibly helpful team.
 

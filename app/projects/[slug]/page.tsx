@@ -21,8 +21,9 @@ export const generateStaticParams = async () => {
     }));
 };
 
-const PostPage = async ({ params }: { params: { slug: string } }) => {
-    const { slug } = await params;
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+const PostPage = (props: any) => {
+    const slug = props.params.slug;
     const post = getPostContent(slug);
     return (
         <div>
@@ -30,8 +31,10 @@ const PostPage = async ({ params }: { params: { slug: string } }) => {
                 <ChevronLeft />
                 <p>Go back</p>
             </Link>
-            <h2>{post.data.title}</h2>
-            <Markdown>{post.content}</Markdown>
+            <div className={styles.contentContainer}>
+                <h2>{post.data.title}</h2>
+                <Markdown>{post.content}</Markdown>
+            </div>
         </div>
     );
 };

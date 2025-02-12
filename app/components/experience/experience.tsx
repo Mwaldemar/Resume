@@ -17,7 +17,7 @@ type ExperienceProps = {
 export const Experience = ({ className, id, position, type, year, duration, description, place }: ExperienceProps) => {
     return (
         <div className={clsx(styles.experienceContainer, className)}>
-            <h4 className={styles.expHeader}>{place}</h4>
+            <div className={styles.expHeader}>{place}</div>
             <div>{type}</div>
             <div>{position}</div>
             <div>{year} ({duration})</div>

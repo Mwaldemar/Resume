@@ -16,10 +16,23 @@
       align-content: center;
       border-radius: 50px;
 
+      .clearIcon {
+        position: absolute;
+        right: 10px;
+        cursor: pointer;
+        transition: 0.3s ease;
+
+        &:hover {
+          color: var(--blue);
+          transform: rotate(90deg);
+        }
+      }
+
       .searchInput {
         all: unset;
         border-bottom: 1px solid var(--black);
         margin-left: 8px;
+        display: flex;
 
         &::-webkit-search-cancel-button {
           -webkit-appearance: none;
@@ -66,8 +79,16 @@
               align-items: center;
               justify-content: space-between;
 
+              > svg {
+                transition: color 0.1s ease;
+              }
+
               &:hover {
                 text-decoration: underline;
+
+                > svg {
+                  color: var(--blue);
+                }
               }
             }
           }
