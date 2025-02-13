@@ -9,76 +9,40 @@ import { GBE } from "./descriptions/GBE/GBE";
 import { Experience } from "./components/experience/experience";
 import { Trendhim } from "./descriptions/Trendhim/trendhim";
 
-const personalInfo = [
-  { icon: <Mail />, text: 'mikkelwaldemar@gmail.com', link: '' },
-  { icon: <Phone />, text: '+45 60541485', link: '' },
-  { icon: <MapPin />, text: 'Brabrand, Aarhus', link: '' },
-  { icon: <Linkedin />, text: 'Linkedin Profile', link: 'https://www.linkedin.com/in/mikkel-w-johannessen/' },
-];
-
-const languages = [
-  { skill: 'Danish', level: 100 },
-  { skill: 'English', level: 95 },
-];
-
-const skills = [
-  { skill: 'React.js', level: 80 },
-  { skill: 'TypeScript', level: 80 },
-  { skill: 'JavaScript', level: 60 },
-  { skill: 'Web Design', level: 70 },
-  { skill: 'UX', level: 70 },
-];
-
-const hobbies = [
-  { icon: <Gamepad2 /> },
-  { icon: <Music /> },
-  { icon: <PlaneTakeoff /> },
-  { icon: <Computer /> },
-]
-
-const educations = [
-  { id: "GBE", year: "2020-2025", level: "Bachelor's Degree", degree: "Global Business Engineering", specialization: "Software", school: "VIA University College", description: <GBE /> },
-]
-
-const experience = [
-  { id: "Trendhim", position: "Frontend Software Engineer", place: "Trendhim", type: "Internship", year: "2024", duration: "5 months", description: <Trendhim /> },
-  { id: "Randers Tegl", position: "Production Employee", place: "Carlsberg Bjælker, Randers Tegl", type: "Full time", year: "2016-2018 & 2019-2020", duration: "2 years, 11 months" },
-  { id: "Rema", position: "Cashier", place: "Rema 1000", type: "Student Worker", year: "2011-2013", duration: "1 year, 7 months" },
-]
-
-// const mikkel = {
-//   personalInfo: [
-//     { icon: <Mail />, text: 'mikkelwaldemar@gmail.com', link: '' },
-//     { icon: <Phone />, text: '+45 60541485', link: '' },
-//     { icon: <MapPin />, text: 'Brabrand, Aarhus', link: '' },
-//     { icon: <Linkedin />, text: 'Linkedin Profile', link: 'https://www.linkedin.com/in/mikkel-w-johannessen/' },
-//   ],
-//   experience: [
-//     { id: "Trendhim", position: "Frontend Software Engineer", place: "Trendhim", type: "Internship", year: "2024", duration: "5 months", description: <Trendhim /> },
-//     { id: "Randers Tegl", position: "Production Employee", place: "Carlsberg Bjælker, Randers Tegl", type: "Full time", year: "2016-2018 & 2019-2020", duration: "2 years, 11 months" },
-//     { id: "Rema", position: "Cashier", place: "Rema 1000", type: "Student Worker", year: "2011-2013", duration: "1 year, 7 months" },
-//   ],
-//   languages: [
-//     { skill: 'Danish', level: 100 },
-//     { skill: 'English', level: 95 },
-//   ],
-//   skills: [
-//     { skill: 'React.js', level: 80 },
-//     { skill: 'TypeScript', level: 80 },
-//     { skill: 'JavaScript', level: 60 },
-//     { skill: 'Web Design', level: 70 },
-//     { skill: 'UX', level: 70 },
-//   ],
-//   hobbies: [
-//     { icon: <Gamepad2 /> },
-//     { icon: <Music /> },
-//     { icon: <PlaneTakeoff /> },
-//     { icon: <Computer /> },
-//   ],
-//   education: [
-//     { id: "GBE", year: "2020-2025", level: "Bachelor's Degree", degree: "Global Business Engineering", specialization: "Software", school: "VIA University College", description: <GBE /> },
-//   ],
-// };
+const mikkel = {
+  personalInfo: [
+    { icon: <Mail />, text: 'mikkelwaldemar@gmail.com', link: '' },
+    { icon: <Phone />, text: '+45 60541485', link: '' },
+    { icon: <MapPin />, text: 'Brabrand, Aarhus', link: '' },
+    { icon: <Linkedin />, text: 'Linkedin Profile', link: 'https://www.linkedin.com/in/mikkel-w-johannessen/' },
+  ],
+  experience: [
+    { id: "Trendhim", position: "Frontend Software Engineer", place: "Trendhim", type: "Internship", year: "2024", duration: "5 months", description: <Trendhim /> },
+    { id: "Randers Tegl", position: "Production Employee", place: "Carlsberg Bjælker, Randers Tegl", type: "Full time", year: "2016-2018 & 2019-2020", duration: "2 years, 11 months" },
+    { id: "Rema", position: "Cashier", place: "Rema 1000", type: "Student Worker", year: "2011-2013", duration: "1 year, 7 months" },
+  ],
+  languages: [
+    { skill: 'Danish', level: 100 },
+    { skill: 'English', level: 95 },
+  ],
+  skills: [
+    { skill: 'React.js', level: 80 },
+    { skill: 'Next.js', level: 65 },
+    { skill: 'TypeScript', level: 80 },
+    { skill: 'JavaScript', level: 60 },
+    { skill: 'Web Design', level: 70 },
+    { skill: 'UX', level: 70 },
+  ],
+  hobbies: [
+    { icon: <Gamepad2 /> },
+    { icon: <Music /> },
+    { icon: <PlaneTakeoff /> },
+    { icon: <Computer /> },
+  ],
+  educations: [
+    { id: "GBE", year: "2020-2025", level: "Bachelor's Degree", degree: "Global Business Engineering", specialization: "Software", school: "VIA University College", description: <GBE /> },
+  ],
+};
 
 export default function Home() {
   return (
@@ -90,26 +54,26 @@ export default function Home() {
           </div>
           <div className={styles.personalInfo}>
             <div className={styles.headers}>Contact</div>
-            {personalInfo.map((info, index) => (
+            {mikkel.personalInfo.map((info, index) => (
               <Contact key={index} icon={info.icon} text={info.text} link={info.link} />
             ))}
           </div>
           <div>
             <div className={styles.skills}>
               <div className={styles.headers}>Skills</div>
-              {skills.map((skill, index) => (
+              {mikkel.skills.map((skill, index) => (
                 <ProgressBar key={index} skill={skill.skill} level={skill.level} />
               ))}
             </div>
             <div className={styles.language}>
               <div className={styles.headers}>Languages</div>
-              {languages.map((language, index) => (
+              {mikkel.languages.map((language, index) => (
                 <ProgressBar key={index} skill={language.skill} level={language.level} />
               ))}
             </div>
             <div className={styles.headers}>Hobbies</div>
             <div className={styles.hobbies}>
-              {hobbies.map((hobby, index) => (
+              {mikkel.hobbies.map((hobby, index) => (
                 <div className={styles.hobbyIcons} key={index}>
                   {hobby.icon}
                 </div>
@@ -120,7 +84,7 @@ export default function Home() {
         <div className={styles.info}>
           <div className={styles.infoContainer}>
             <div className={styles.headers}>Education</div>
-            {educations.map(education => (
+            {mikkel.educations.map(education => (
               <Education
                 className={styles.education}
                 key={education.id}
@@ -130,7 +94,7 @@ export default function Home() {
           </div>
           <div className={styles.infoContainer}>
             <div className={styles.headers}>Experience</div>
-            {experience.map(exp => (
+            {mikkel.experience.map(exp => (
               <Experience
                 className={styles.experience}
                 key={exp.id}

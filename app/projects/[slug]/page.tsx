@@ -6,7 +6,7 @@ import { getProjectMetadata } from '@/components/getProjectMetadata';
 import { ChevronLeft } from 'lucide-react';
 import Link from 'next/link';
 
-const getPostContent = (slug: string) => {
+const getProjectContent = (slug: string) => {
     const folder = "projects/";
     const file = `${folder}${slug}.md`;
     const content = fs.readFileSync(file, "utf-8");
@@ -22,9 +22,9 @@ export const generateStaticParams = async () => {
 };
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
-const PostPage = (props: any) => {
+const ProjectPage = (props: any) => {
     const slug = props.params.slug;
-    const post = getPostContent(slug);
+    const project = getProjectContent(slug);
     return (
         <div>
             <Link href={"/projects"} className={styles.projectGoBack}>
@@ -32,11 +32,11 @@ const PostPage = (props: any) => {
                 <p>Go back</p>
             </Link>
             <div className={styles.contentContainer}>
-                <h2>{post.data.title}</h2>
-                <Markdown>{post.content}</Markdown>
+                <h2>{project.data.title}</h2>
+                <Markdown>{project.content}</Markdown>
             </div>
         </div>
     );
 };
 
-export default PostPage;
+export default ProjectPage;
