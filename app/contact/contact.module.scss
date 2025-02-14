@@ -1,0 +1,113 @@
+.container {
+  width: 70%;
+  margin: 100px auto;
+  display: flex;
+  flex-direction: row;
+
+  .pictureContainer {
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+
+    .picture {
+    }
+
+    .border {
+      border-right: 4px solid var(--blue);
+      height: 100px;
+    }
+  }
+
+  .formContainer {
+    width: 60%;
+    border-left: 1px solid var(--lightGray);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 25px;
+
+    .title {
+      text-align: center;
+      font-weight: bold;
+      font-size: 1.25rem;
+      margin-bottom: 20px;
+    }
+
+    .form {
+      display: flex;
+      flex-direction: column;
+      height: 90%;
+
+      .inputContainer {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+
+        > div {
+          min-width: 55px;
+        }
+
+        .input {
+          all: unset;
+          margin-bottom: 10px;
+          border-bottom: 1px solid var(--black);
+          width: 100%;
+        }
+      }
+
+      .textarea,
+      .button {
+        all: unset;
+        border: 1px solid var(--black);
+        padding: 5px;
+        transition: all 0.3s ease;
+
+        &.button {
+          background-color: var(--black);
+          color: var(--eggWhite);
+          font-weight: bold;
+          padding: 10px;
+          &:hover {
+            background-color: var(--darkGray);
+            cursor: pointer;
+          }
+        }
+      }
+
+      .textarea {
+        word-wrap: break-word;
+        white-space: normal;
+        flex-grow: 1;
+        margin-bottom: 10px;
+      }
+
+      .button {
+        text-align: center;
+      }
+    }
+
+    .statusMessageContainer {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 5px;
+      height: 10%;
+
+      .statusMessage {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+
+        &.success {
+          color: #008000;
+        }
+
+        &.error {
+          color: #930101;
+        }
+      }
+    }
+  }
+}

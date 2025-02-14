@@ -50,7 +50,7 @@ export default function Home() {
       <div className={styles.heroContainer}>
         <div className={styles.hero}>
           <div className={styles.pictureContainer}>
-            <Image className={styles.picture} width={150} height={150} alt={""} src={"/mikkel.jpg"} />
+            <Image className={styles.picture} width={150} height={150} alt={"Mikkel"} src={"/mikkel2.png"} />
           </div>
           <div className={styles.personalInfo}>
             <div className={styles.headers}>Contact</div>

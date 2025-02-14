@@ -15,8 +15,8 @@ To demonstrate my knowledge of TypeScript, I’ve been using objects to map most
 
 The goal is to create an online presence that not only reflects my technical abilities but also serves as a professional portfolio for potential employers, and that's why i will keep adding projects to this website, that will give a little taste of what i have been working on (potentially with a few pictures).
 
-One of the metrics i will keep optimizing for is the lighthouse score; Right now it scores really well and the "lower" accessibility score is due to the contrast of the blue color on the off-white color, which i will not do anything about.
+One of the metrics i will keep optimizing for is the lighthouse score; Right now it scores really well on the "main"-page (home) and the "lower" accessibility score is due to the contrast of the blue color on the off-white color, which i will not do anything about.
 
-<img src="/lighthouse.png" alt="Lighthouse score for online resume">
+<img src="/lighthouse.PNG" alt="Lighthouse score for online resume">
 
 So far, it’s a great learning experience, and I look forward to further optimize the site and add more features.
