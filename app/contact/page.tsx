@@ -56,7 +56,9 @@ export default function ContactForm() {
     return (
         <div className={styles.container}>
             <div className={styles.pictureContainer}>
-                <Image src={"/mikkel2.png"} width={400} height={360} alt="Mikkel picture" />
+                <Image className={styles.picture} src={"/mikkel2.png"} width={400} height={360} alt="Mikkel picture" />
+            </div>
+            <div className={styles.borderContainer}>
                 <div className={styles.border} />
             </div>
             <div className={styles.formContainer}>

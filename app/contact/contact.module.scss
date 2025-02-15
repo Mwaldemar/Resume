@@ -1,20 +1,42 @@
 .container {
-  width: 70%;
-  margin: 120px auto;
+  width: 100%;
+  margin: 50px auto;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
+  align-items: center;
+
+  @include respond-to(desktop2) {
+    margin: 120px auto;
+    flex-direction: row;
+    width: 80%;
+  }
+
+  @include respond-to(largeDesktop) {
+    width: 70%;
+  }
 
   .pictureContainer {
-    width: 40%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     position: relative;
-    display: none;
+    justify-content: center;
+    margin-bottom: 30px;
 
-    @include respond-to(largeDesktop) {
-      display: flex;
+    @include respond-to(desktop) {
+      justify-content: center;
+      width: 40%;
+    }
+  }
+
+  .borderContainer {
+    @include respond-to(desktop2) {
+      .borderContainer {
+        display: flex;
+        align-items: center;
+      }
 
       .border {
         border-right: 4px solid var(--blue);
@@ -24,18 +46,29 @@
   }
 
   .formContainer {
-    width: 60%;
-    border-left: 1px solid var(--lightGray);
+    width: 80%;
     display: flex;
     justify-content: center;
     flex-direction: column;
     padding: 0 25px;
+    border-top: 1px solid var(--lightGray);
+
+    @include respond-to(desktop2) {
+      width: 60%;
+      border-left: 1px solid var(--lightGray);
+      border-top: 0;
+    }
 
     .title {
       text-align: center;
       font-weight: bold;
       font-size: 1.25rem;
       margin-bottom: 20px;
+      margin-top: 10px;
+
+      @include respond-to(desktop2) {
+        margin-top: 0;
+      }
     }
 
     .form {
