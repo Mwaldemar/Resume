@@ -5,11 +5,13 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  height: 100%;
 
   @include respond-to(desktop2) {
     margin: 120px auto;
     flex-direction: row;
     width: 80%;
+    align-items: normal;
   }
 
   @include respond-to(largeDesktop) {
@@ -25,15 +27,16 @@
     justify-content: center;
     margin-bottom: 30px;
 
-    @include respond-to(desktop) {
+    @include respond-to(desktop2) {
       justify-content: center;
       width: 40%;
+      margin-bottom: 0;
     }
   }
 
   .borderContainer {
     @include respond-to(desktop2) {
-      .borderContainer {
+      &.borderContainer {
         display: flex;
         align-items: center;
       }
@@ -130,11 +133,13 @@
       align-items: center;
       padding: 5px;
       height: 10%;
+      min-height: 25px;
 
       .statusMessage {
         display: flex;
         align-items: center;
         gap: 5px;
+        height: 10%;
 
         &.success {
           color: #008000;
