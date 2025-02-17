@@ -27,6 +27,16 @@
     justify-content: center;
     margin-bottom: 30px;
 
+    .picture {
+      width: 350px;
+      height: 310px;
+
+      @include respond-to(mobile) {
+        width: 400px;
+        height: 360px;
+      }
+    }
+
     @include respond-to(desktop2) {
       justify-content: center;
       width: 40%;

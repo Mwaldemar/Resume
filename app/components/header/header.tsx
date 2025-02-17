@@ -13,7 +13,11 @@ export const Header = () => {
                     <h1 className={styles.headerTitle}>Mikkel W. Johannessen - CV</h1>
                 </Link>
             </div>
-            <Navbar projects={projects} />
+            <Navbar
+                mobile
+                desktop
+                projects={projects}
+            />
         </>
     )
 }

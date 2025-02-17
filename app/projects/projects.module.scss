@@ -2,8 +2,16 @@
   width: 100%;
 
   .projectContainer {
-    width: 50%;
+    width: 90%;
     margin: 100px auto;
+
+    @include respond-to(tablet) {
+      width: 75%;
+    }
+
+    @include respond-to(desktop) {
+      width: 50%;
+    }
 
     .projectPreview > a {
       text-decoration: none;

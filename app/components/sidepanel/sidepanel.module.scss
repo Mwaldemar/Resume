@@ -1,0 +1,64 @@
+.sidepanelWrapper {
+  .checkbox:checked ~ .backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 10;
+    transition: 0.2s ease;
+  }
+
+  .checkbox {
+    display: none;
+
+    & ~ .content {
+      max-height: 0;
+      overflow: hidden;
+      left: -100%;
+    }
+
+    &:checked ~ .content {
+      max-height: 1250px;
+      border-bottom: 1px solid #cccccc;
+      padding: 10px 10px 20px 10px;
+      background-color: var(--eggWhite);
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      overflow-y: auto;
+      z-index: 20;
+      box-shadow: rgba(0, 0, 0, 0.6) 0px 5px 15px;
+      transition: left 0.4s ease-in-out;
+      width: 75%;
+
+      .borderBottom {
+        border-bottom: 1px solid var(--black);
+      }
+
+      .closeButtonContainer {
+        border-bottom: 1px solid var(--black);
+        padding: 15px;
+
+        .close {
+          cursor: pointer;
+          position: absolute;
+          top: 10px;
+          right: 10px;
+        }
+      }
+    }
+  }
+
+  .trigger {
+    width: fit-content;
+    display: grid;
+    cursor: pointer;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
