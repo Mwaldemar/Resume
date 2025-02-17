@@ -7,8 +7,14 @@
     width: 70%;
     margin: 100px auto;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: 95px;
+    align-items: center;
+
+    @include respond-to(desktop) {
+      flex-direction: row;
+      align-items: normal;
+    }
 
     .hero {
       width: 25%;
@@ -86,7 +92,11 @@
     }
 
     .info {
-      width: 75%;
+      width: 100%;
+
+      @include respond-to(desktop) {
+        width: 75%;
+      }
 
       .infoContainer {
         border-bottom: 1px solid var(--black);

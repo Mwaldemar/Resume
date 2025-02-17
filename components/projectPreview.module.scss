@@ -16,21 +16,23 @@
   transition: transform 0.3s ease-in-out;
   overflow: hidden;
 
-  &:hover {
-    .title {
-      width: 100%;
-      border-radius: 50px;
-    }
-
-    .content {
-      .hideOnHover {
-        opacity: 0;
-        visibility: hidden;
+  @include respond-to(desktop) {
+    &:hover {
+      .title {
+        width: 100%;
+        border-radius: 50px;
       }
 
-      .showOnHover {
-        opacity: 1;
-        visibility: visible;
+      .content {
+        .hideOnHover {
+          opacity: 0;
+          visibility: hidden;
+        }
+
+        .showOnHover {
+          opacity: 1;
+          visibility: visible;
+        }
       }
     }
   }
@@ -61,51 +63,57 @@
     }
   }
 
-  .content {
-    flex-grow: 1;
-    padding: 0 20px;
-    opacity: 1;
-    visibility: visible;
-    transition: opacity 0.8s ease-in-out;
+  .showOnHover {
+    display: none;
+  }
+
+  @include respond-to(desktop) {
+    .content {
+      flex-grow: 1;
+      padding: 0 20px;
+      opacity: 1;
+      visibility: visible;
+      transition: opacity 0.8s ease-in-out;
+
+      .hideOnHover {
+        opacity: 1;
+        visibility: visible;
+        transition: opacity 0.5s ease-in-out;
+      }
+    }
 
     .hideOnHover {
       opacity: 1;
       visibility: visible;
       transition: opacity 0.5s ease-in-out;
     }
-  }
 
-  .hideOnHover {
-    opacity: 1;
-    visibility: visible;
-    transition: opacity 0.5s ease-in-out;
-  }
-
-  .showOnHover {
-    opacity: 0;
-    visibility: hidden;
-    display: none;
-    align-items: center;
-    transition: opacity 0.5s ease-in-out;
-
-    svg {
-      margin-top: 4px;
-    }
-  }
-
-  &:hover {
     .showOnHover {
-      visibility: visible;
-      display: flex;
-      padding-right: 40px;
-      position: absolute;
-      right: 0;
-      animation: opacity 0.5s ease-in-out forwards;
-    }
-
-    .hideOnHover {
       opacity: 0;
       visibility: hidden;
+      display: none;
+      align-items: center;
+      transition: opacity 0.5s ease-in-out;
+
+      svg {
+        margin-top: 4px;
+      }
+    }
+
+    &:hover {
+      .showOnHover {
+        visibility: visible;
+        display: flex;
+        padding-right: 40px;
+        position: absolute;
+        right: 0;
+        animation: opacity 0.5s ease-in-out forwards;
+      }
+
+      .hideOnHover {
+        opacity: 0;
+        visibility: hidden;
+      }
     }
   }
 }
