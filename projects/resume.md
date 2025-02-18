@@ -5,7 +5,7 @@ subtitle: "Development of this online resume / CV"
 
 ### Development of this online resume / CV - _(Still in progress)_
 
-**_I will keep refining this resume. Future updates will, among other things, include cross-device usability (Right now its only setup for desktop). Furthermore, i will also be adding more projects that i will be working on after finishing this site._**
+**_I will keep refining this resume. Future updates will include more projects that i will be working on after finishing this site._**
 
 I’m building an online resume/CV to showcase my skills and experience in web development. I really enjoy frontend development and it's a big dream of mine to work with frontend development. The project’s been a great opportunity to practice using React.js, Next.js, and TypeScript, all while creating a functional and stylish site that I can use for job applications.
 
