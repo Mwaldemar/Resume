@@ -1,7 +1,7 @@
 import React from "react";
 import styles from './home.module.scss'
 import Image from "next/image";
-import { Computer, Gamepad2, Linkedin, Mail, MapPin, Music, Phone, PlaneTakeoff } from "lucide-react";
+import { Computer, Gamepad2, Github, Linkedin, Mail, MapPin, Music, Phone, PlaneTakeoff } from "lucide-react";
 import ProgressBar from "./components/progressBar/progressBar";
 import Contact from "./components/contact/contact";
 import { Education } from "./components/education/education";
@@ -15,6 +15,7 @@ const mikkel = {
     { icon: <Phone />, text: '+45 60541485', link: '' },
     { icon: <MapPin />, text: 'Brabrand, Aarhus', link: '' },
     { icon: <Linkedin />, text: 'Linkedin Profile', link: 'https://www.linkedin.com/in/mikkel-w-johannessen/' },
+    { icon: <Github />, text: 'GitHub Profile', link: 'https://github.com/Mwaldemar' },
   ],
   experience: [
     { id: "Trendhim", position: "Frontend Software Engineer", place: "Trendhim", type: "Internship", year: "2024", duration: "5 months", description: <Trendhim /> },

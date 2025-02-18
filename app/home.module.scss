@@ -4,16 +4,18 @@
   width: 100%;
 
   .heroContainer {
-    width: 70%;
+    width: 85%;
     margin: 100px auto;
     display: flex;
     flex-direction: column;
-    gap: 95px;
+    gap: 40px;
     align-items: center;
 
     @include respond-to(desktop) {
+      width: 70%;
       flex-direction: row;
       align-items: normal;
+      gap: 95px;
     }
 
     .hero {

@@ -25,7 +25,7 @@ export const Footer = () => {
                 </div>
             </div>
             <div className={styles.copyrightContainer}>
-                <p>© {new Date().getFullYear()} Mikkel Johannessen | Global Business Engineer</p>
+                <p>© {new Date().getFullYear()} Mikkel W. Johannessen | Global Business Engineer</p>
                 <p>Specialization in Software</p>
             </div>
         </footer>
