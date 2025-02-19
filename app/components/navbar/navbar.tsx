@@ -30,7 +30,8 @@ export const Navbar = ({ projects, mobile, desktop }: NavbarProps) => {
 
     const pages = [
         { name: "Home", path: "/" },
-        { name: "Projects", path: "/projects" },
+        { name: "Project Logs", path: "/projects" },
+        { name: "GitHub Repos", path: "/repos" },
         { name: "Contact", path: "/contact" },
     ]
 

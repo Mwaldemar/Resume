@@ -1,0 +1,33 @@
+.container {
+  width: 100%;
+
+  .githubWrapper {
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 70%;
+    gap: 40px;
+
+    @include respond-to(desktop) {
+      flex-direction: row;
+      gap: 95px;
+    }
+
+    .activityWrapper {
+      width: 85%;
+
+      @include respond-to(desktop) {
+        width: 25%;
+      }
+    }
+
+    .reposWrapper {
+      width: 100%;
+
+      @include respond-to(desktop) {
+        width: 60%;
+      }
+    }
+  }
+}
