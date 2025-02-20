@@ -22,13 +22,9 @@ jobs:
         run: |
           npm install
 
-      - name: Compile TypeScript (GitHub Activity)
-        run: |
-          npx tsc scripts/fetchGitHubActivity.ts
-
       - name: Run GitHub Activity script
         run: |
-          node scripts/fetchGitHubActivity.js
+          npx tsx scripts/fetchGitHubActivity.ts
 
       - name: Commit and push updated activity file
         run: |
