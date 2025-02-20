@@ -1,5 +1,5 @@
 import fetch from 'node-fetch';
-import fs from 'fs';
+import * as fs from 'fs';
 
 const GITHUB_USERNAME = 'Mwaldemar';
 const GITHUB_API_URL = `https://api.github.com/users/${GITHUB_USERNAME}/events`;
