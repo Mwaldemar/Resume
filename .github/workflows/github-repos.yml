@@ -2,7 +2,8 @@ name: Fetch GitHub Repos
 
 on:
   schedule:
-    - cron: "0 17 * * *"
+    - cron: "0 17 * * *" # Adjusted to run at 17:00 UTC
+  workflow_dispatch:
 
 jobs:
   fetch-repos:
@@ -20,6 +21,10 @@ jobs:
       - name: Install dependencies
         run: |
           npm install
+
+      - name: Compile TypeScript (GitHub Repos)
+        run: |
+          npx tsc app/scripts/fetchGitHubRepos.ts
 
       - name: Run GitHub Repos script
         run: |

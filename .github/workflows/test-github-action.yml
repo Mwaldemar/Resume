@@ -2,7 +2,7 @@ name: Test GitHub Action
 
 on:
   schedule:
-    - cron: "52 0 * * *"
+    - cron: "00 1 * * *"
   workflow_dispatch:
 
 jobs:
@@ -17,5 +17,14 @@ jobs:
         with:
           node-version: "20"
 
-      - name: Run test script
-        run: node app/scripts/fetchGitHubActivity.js
+      - name: Install dependencies
+        run: |
+          npm install
+
+      - name: Compile TypeScript (GitHub Activity)
+        run: |
+          npx tsc app/scripts/fetchGitHubActivity.ts
+
+      - name: Run GitHub Activity script
+        run: |
+          node app/scripts/fetchGitHubActivity.js

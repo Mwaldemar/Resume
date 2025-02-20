@@ -3,6 +3,7 @@ name: Fetch GitHub Activity
 on:
   schedule:
     - cron: "0 11,15,19 * * *"
+  workflow_dispatch:
 
 jobs:
   fetch-activity:
@@ -20,6 +21,10 @@ jobs:
       - name: Install dependencies
         run: |
           npm install
+
+      - name: Compile TypeScript (GitHub Activity)
+        run: |
+          npx tsc app/scripts/fetchGitHubActivity.ts
 
       - name: Run GitHub Activity script
         run: |
