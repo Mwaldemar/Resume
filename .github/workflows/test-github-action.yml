@@ -2,8 +2,8 @@ name: Test GitHub Action
 
 on:
   schedule:
-    - cron: "45 0 * * *" # Runs at 00:45 UTC (01:45 Denmark time)
-  workflow_dispatch: # Allows manual trigger
+    - cron: "52 0 * * *"
+  workflow_dispatch:
 
 jobs:
   run-test-script:
@@ -18,4 +18,4 @@ jobs:
           node-version: "20"
 
       - name: Run test script
-        run: node app/scripts/githubActivity.js # Change to the actual script name
+        run: node app/scripts/fetchGitHubActivity.js
