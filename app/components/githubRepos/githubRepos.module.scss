@@ -3,9 +3,19 @@
   flex-direction: column;
   width: 100%;
 
+  @include respond-to(desktop) {
+    padding: 15px;
+  }
+
   .repoHeader {
     font-weight: bold;
     margin-bottom: 16px;
+    font-size: 1.3rem;
+    text-align: center;
+
+    @include respond-to(desktop) {
+      text-align: unset;
+    }
   }
 
   .repoList {
@@ -13,62 +23,119 @@
     padding: 0;
     margin: 0;
 
-    .repoLink {
-      display: flex;
-      margin-bottom: 30px;
-      border: 4px solid var(--blue);
-      border-radius: 10px;
-      text-decoration: none;
-      color: black;
-      box-shadow: 4px 6px 15px rgba(0, 0, 0, 0.3);
-
-      &:last-child {
-        margin-bottom: 0;
-      }
-
-      transition: all 0.3s ease;
-
-      &:hover {
-        transform: scale(1.02);
-
-        .repoItem > .repo > .seeOnHover {
-          display: block;
-          position: absolute;
-          right: 15px;
-          top: 10px;
-
-          .hoverText {
-            display: flex;
-            align-items: center;
-            color: var(--eggWhite);
-            background-color: var(--blue);
-            padding: 5px;
-            border-radius: 10px;
-          }
-        }
-      }
-    }
-
     .repoItem {
-      padding: 15px;
       width: 100%;
+      margin-bottom: 30px;
 
       .repo {
-        display: flex;
-        flex-direction: column;
-        gap: 15px;
+        .repoLink {
+          display: flex;
+          flex-direction: column;
+          padding: 15px;
+          border: 4px solid var(--blue);
+          border-radius: 10px;
+          text-decoration: none;
+          color: black;
+          box-shadow: 4px 6px 15px rgba(0, 0, 0, 0.3);
+          transition: all 0.3s ease;
 
-        .repoName {
-          font-size: 1.2rem;
-          font-weight: bold;
-        }
+          &:hover {
+            transform: scale(1.02);
 
-        .repoDescription {
-          padding: 5px;
-        }
+            @include respond-to(desktop) {
+              > .seeOnHover {
+                display: block;
+                position: absolute;
+                right: 10px;
+                top: 10px;
 
-        .seeOnHover {
-          display: none;
+                .hoverText {
+                  display: flex;
+                  align-items: center;
+                  color: var(--eggWhite);
+                  background-color: var(--blue);
+                  padding: 5px;
+                  border-radius: 10px;
+                }
+              }
+            }
+          }
+          .repoName {
+            font-size: 1.2rem;
+            font-weight: bold;
+            margin-bottom: 15px;
+          }
+
+          .repoDescription {
+            padding: 5px 0;
+          }
+
+          .updated {
+            margin-bottom: 15px;
+          }
+
+          .languageContainer {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+
+            @include respond-to(desktop) {
+              flex-direction: row;
+              gap: 30px;
+            }
+
+            .language {
+              width: fit-content;
+              padding: 6px;
+              border-radius: 10px;
+
+              &.cSharp {
+                background-color: #5c2d91;
+                color: white;
+                border: 2px solid #4a1e76; /* Optional border color */
+              }
+
+              &.typeScript {
+                background-color: #3178c6;
+                color: white;
+                border: 2px solid #245a8c;
+              }
+
+              &.scss {
+                background-color: #c6538c;
+                color: white;
+                border: 2px solid #9f4376;
+              }
+
+              &.javaScript {
+                background-color: #f7df1e;
+                color: black;
+                border: 2px solid #e2c200;
+              }
+
+              &.css {
+                background-color: #1572b6;
+                color: white;
+                border: 2px solid #0d3b6e;
+              }
+
+              &.html {
+                background-color: #e34f26;
+                color: white;
+                border: 2px solid #d8491d;
+              }
+
+              &.python {
+                background-color: #306998;
+                color: white;
+                border: 2px solid #2b4f6a;
+              }
+            }
+          }
+
+          .seeOnHover {
+            display: none;
+          }
         }
       }
     }

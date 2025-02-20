@@ -1,5 +1,6 @@
 import fetch from 'node-fetch';
 import fs from 'fs';
+import { GitHubRepo } from '@/app/components/githubRepos/githubRepos';
 
 const GITHUB_USERNAME = 'Mwaldemar';
 const ORG_NAME = 'Bachelor-Project-SW8'; 
@@ -16,15 +17,22 @@ async function fetchGitHubRepos() {
     if (!personalResponse.ok) throw new Error(`GitHub API error (personal repos): ${personalResponse.status}`);
     if (!orgResponse.ok) throw new Error(`GitHub API error (org repos): ${orgResponse.status}`);
 
-    const personalRepos = await personalResponse.json() as unknown[];
-    const orgRepos = await orgResponse.json() as unknown[];
+    const personalRepos = await personalResponse.json() as GitHubRepo[];
+    const orgRepos = await orgResponse.json() as GitHubRepo[];
+    const allRepos = [...personalRepos, ...orgRepos];
 
-    // Merge and sort by last pushed date (pushed_at)
-    const allRepos = [...personalRepos, ...orgRepos]
+    // Fetch languages for each repo
+    for (const repo of allRepos) {
+      const languageResponse = await fetch(repo.languages_url);
+      if (!languageResponse.ok) continue; // Skip if it fails
+
+      const languages = await languageResponse.json() as Record<string, number>;
+      repo.languages = Object.keys(languages); // Store language names
+    }
 
     fs.writeFileSync('./public/github-repos.json', JSON.stringify(allRepos, null, 2));
 
-    console.log("GitHub repositories updated!");
+    console.log("GitHub repositories updated with languages!");
   } catch (error) {
     console.error("Error fetching GitHub repositories:", error);
   }
