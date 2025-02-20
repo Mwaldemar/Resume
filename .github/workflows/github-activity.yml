@@ -23,7 +23,7 @@ jobs:
 
       - name: Run GitHub Activity script
         run: |
-          node app/scripts/activityScript.js
+          node app/scripts/fetchGitHubActivity.js
 
       - name: Commit and push updated activity file
         run: |

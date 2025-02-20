@@ -23,7 +23,7 @@ jobs:
 
       - name: Run GitHub Repos script
         run: |
-          node app/scripts/reposScript.js
+          node app/scripts/fetchGitHubRepos.js
 
       - name: Commit and push updated repos file
         run: |
