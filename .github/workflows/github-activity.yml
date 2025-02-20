@@ -25,6 +25,8 @@ jobs:
           npm install
 
       - name: Run GitHub Activity script
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
         run: |
           npx tsx scripts/fetchGitHubActivity.ts
 
