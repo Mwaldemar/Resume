@@ -2,7 +2,7 @@ name: Fetch GitHub Repos
 
 on:
   schedule:
-    - cron: "0 17 * * *" # Adjusted to run at 17:00 UTC
+    - cron: "0 17 * * *"
   workflow_dispatch:
 
 jobs:
