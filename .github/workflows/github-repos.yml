@@ -24,11 +24,7 @@ jobs:
 
       - name: Compile TypeScript (GitHub Repos)
         run: |
-          npx tsc scripts/fetchGitHubRepos.ts
-
-      - name: Run GitHub Repos script
-        run: |
-          node scripts/fetchGitHubRepos.js
+          npx tsx scripts/fetchGitHubRepos.ts
 
       - name: Commit and push updated repos file
         run: |
