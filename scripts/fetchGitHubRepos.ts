@@ -1,5 +1,5 @@
 import fetch from 'node-fetch';
-import fs from 'fs';
+import * as fs from 'fs';
 import { GitHubRepo } from '@/app/components/githubRepos/githubRepos';
 
 const GITHUB_USERNAME = 'Mwaldemar';
