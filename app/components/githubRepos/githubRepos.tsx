@@ -15,7 +15,7 @@ export type GitHubRepo = {
 
 type GitHubReposProps = {
     className?: string,
-    hover: string,
+    hover: boolean,
     repos: GitHubRepo[],
 };
 
@@ -55,7 +55,7 @@ export default function GitHubRepos({ repos, className, hover }: GitHubReposProp
 
                                 <div className={styles.seeOnHover}>
                                     {hover && (
-                                        <div className={styles.hoverText}>{hover} <MoveUpRight /></div>
+                                        <div className={styles.hoverText}>Open in GitHub <MoveUpRight /></div>
                                     )}
                                 </div>
                             </a>

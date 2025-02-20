@@ -39,7 +39,7 @@ export default function GitHubPage() {
     return (
         <div className={styles.container}>
             <div className={styles.githubWrapper}>
-                <GitHubRepos hover='Open in GitHub' className={styles.reposWrapper} repos={repos} />
+                <GitHubRepos hover className={styles.reposWrapper} repos={repos} />
                 <GitHubActivity className={styles.activityWrapper} activities={activities} />
             </div>
         </div>
