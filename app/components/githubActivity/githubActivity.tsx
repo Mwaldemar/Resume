@@ -16,7 +16,7 @@ type GitHubActivityProps = {
 }
 
 export const formatDate = (dateString: string) => {
-    return new Intl.DateTimeFormat('en-GB', {
+    return new Intl.DateTimeFormat('da-dk', {
         day: '2-digit',
         month: '2-digit',
         year: 'numeric',
