@@ -21,13 +21,12 @@ async function fetchGitHubRepos() {
     const orgRepos = await orgResponse.json() as GitHubRepo[];
     const allRepos = [...personalRepos, ...orgRepos];
 
-    // Fetch languages for each repo
     for (const repo of allRepos) {
       const languageResponse = await fetch(repo.languages_url);
-      if (!languageResponse.ok) continue; // Skip if it fails
+      if (!languageResponse.ok) continue;
 
       const languages = await languageResponse.json() as Record<string, number>;
-      repo.languages = Object.keys(languages); // Store language names
+      repo.languages = Object.keys(languages);
     }
 
     fs.writeFileSync('./public/github-repos.json', JSON.stringify(allRepos, null, 2));
