@@ -15,7 +15,7 @@
     }
 
     .activityWrapper {
-      width: 85%;
+      width: 100%;
 
       @include respond-to(desktop) {
         width: 25%;

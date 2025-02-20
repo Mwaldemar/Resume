@@ -67,14 +67,14 @@
     "releases_url": "https://api.github.com/repos/Mwaldemar/Resume/releases{/id}",
     "deployments_url": "https://api.github.com/repos/Mwaldemar/Resume/deployments",
     "created_at": "2025-02-01T14:15:49Z",
-    "updated_at": "2025-02-19T16:39:56Z",
-    "pushed_at": "2025-02-18T11:34:00Z",
+    "updated_at": "2025-02-19T19:06:29Z",
+    "pushed_at": "2025-02-19T19:06:25Z",
     "git_url": "git://github.com/Mwaldemar/Resume.git",
     "ssh_url": "git@github.com:Mwaldemar/Resume.git",
     "clone_url": "https://github.com/Mwaldemar/Resume.git",
     "svn_url": "https://github.com/Mwaldemar/Resume",
     "homepage": "https://resume-ruby-ten-65.vercel.app",
-    "size": 1419,
+    "size": 1433,
     "stargazers_count": 0,
     "watchers_count": 0,
     "language": "TypeScript",
@@ -98,7 +98,12 @@
     "forks": 0,
     "open_issues": 0,
     "watchers": 0,
-    "default_branch": "main"
+    "default_branch": "main",
+    "languages": [
+      "TypeScript",
+      "SCSS",
+      "JavaScript"
+    ]
   },
   {
     "id": 759879982,
@@ -199,7 +204,13 @@
     "forks": 0,
     "open_issues": 0,
     "watchers": 0,
-    "default_branch": "main"
+    "default_branch": "main",
+    "languages": [
+      "TypeScript",
+      "CSS",
+      "SCSS",
+      "JavaScript"
+    ]
   },
   {
     "id": 722944747,
@@ -300,7 +311,12 @@
     "forks": 0,
     "open_issues": 0,
     "watchers": 0,
-    "default_branch": "master"
+    "default_branch": "master",
+    "languages": [
+      "C#",
+      "CSS",
+      "HTML"
+    ]
   },
   {
     "id": 717214336,
@@ -401,7 +417,12 @@
     "forks": 0,
     "open_issues": 0,
     "watchers": 0,
-    "default_branch": "master"
+    "default_branch": "master",
+    "languages": [
+      "JavaScript",
+      "CSS",
+      "HTML"
+    ]
   },
   {
     "id": 774609714,
@@ -509,7 +530,13 @@
       "push": false,
       "triage": false,
       "pull": true
-    }
+    },
+    "languages": [
+      "TypeScript",
+      "SCSS",
+      "CSS",
+      "JavaScript"
+    ]
   },
   {
     "id": 900795517,
@@ -617,6 +644,9 @@
       "push": false,
       "triage": false,
       "pull": true
-    }
+    },
+    "languages": [
+      "Python"
+    ]
   }
 ]

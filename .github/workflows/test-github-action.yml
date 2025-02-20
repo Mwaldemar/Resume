@@ -1,0 +1,21 @@
+name: Test GitHub Action
+
+on:
+  schedule:
+    - cron: "45 0 * * *" # Runs at 00:45 UTC (01:45 Denmark time)
+  workflow_dispatch: # Allows manual trigger
+
+jobs:
+  run-test-script:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Run test script
+        run: node app/scripts/githubActivity.js # Change to the actual script name

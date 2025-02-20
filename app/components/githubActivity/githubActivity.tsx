@@ -15,7 +15,7 @@ type GitHubActivityProps = {
     activities: GitHubEventProps[],
 }
 
-const formatDate = (dateString: string) => {
+export const formatDate = (dateString: string) => {
     return new Intl.DateTimeFormat('en-GB', {
         day: '2-digit',
         month: '2-digit',
