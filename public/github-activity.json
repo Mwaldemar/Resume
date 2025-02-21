@@ -1,5 +1,45 @@
 [
   {
+    "id": "46811364796",
+    "type": "PushEvent",
+    "actor": {
+      "id": 102224869,
+      "login": "Mwaldemar",
+      "display_login": "Mwaldemar",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Mwaldemar",
+      "avatar_url": "https://avatars.githubusercontent.com/u/102224869?"
+    },
+    "repo": {
+      "id": 925695263,
+      "name": "Mwaldemar/Resume",
+      "url": "https://api.github.com/repos/Mwaldemar/Resume"
+    },
+    "payload": {
+      "repository_id": 925695263,
+      "push_id": 22781296972,
+      "size": 1,
+      "distinct_size": 1,
+      "ref": "refs/heads/main",
+      "head": "a494b61ed192fc37411627ad2dfdf9337712440b",
+      "before": "18b20f50a5dc32146e426dd8259b502fa5ffeabd",
+      "commits": [
+        {
+          "sha": "a494b61ed192fc37411627ad2dfdf9337712440b",
+          "author": {
+            "email": "github-actions@github.com",
+            "name": "GitHub Actions"
+          },
+          "message": "Update GitHub activity",
+          "distinct": true,
+          "url": "https://api.github.com/repos/Mwaldemar/Resume/commits/a494b61ed192fc37411627ad2dfdf9337712440b"
+        }
+      ]
+    },
+    "public": true,
+    "created_at": "2025-02-21T09:20:32Z"
+  },
+  {
     "id": "46807632991",
     "type": "PushEvent",
     "actor": {
@@ -358,55 +398,5 @@
     },
     "public": true,
     "created_at": "2025-02-20T18:27:21Z"
-  },
-  {
-    "id": "46785267708",
-    "type": "PushEvent",
-    "actor": {
-      "id": 102224869,
-      "login": "Mwaldemar",
-      "display_login": "Mwaldemar",
-      "gravatar_id": "",
-      "url": "https://api.github.com/users/Mwaldemar",
-      "avatar_url": "https://avatars.githubusercontent.com/u/102224869?"
-    },
-    "repo": {
-      "id": 925695263,
-      "name": "Mwaldemar/Resume",
-      "url": "https://api.github.com/repos/Mwaldemar/Resume"
-    },
-    "payload": {
-      "repository_id": 925695263,
-      "push_id": 22768084218,
-      "size": 2,
-      "distinct_size": 1,
-      "ref": "refs/heads/main",
-      "head": "185e3af6aee2109e1303deace00ccb367b89e9b8",
-      "before": "aaf478012592ef9288ab1cff6a4c69b66af78e23",
-      "commits": [
-        {
-          "sha": "72d5d317f2436e8874885592a65da797449e6686",
-          "author": {
-            "email": "304837@via.dk",
-            "name": "Mwaldemar"
-          },
-          "message": "Changed activity script back to the first version",
-          "distinct": false,
-          "url": "https://api.github.com/repos/Mwaldemar/Resume/commits/72d5d317f2436e8874885592a65da797449e6686"
-        },
-        {
-          "sha": "185e3af6aee2109e1303deace00ccb367b89e9b8",
-          "author": {
-            "email": "102224869+Mwaldemar@users.noreply.github.com",
-            "name": "Mikkel W. Johannessen"
-          },
-          "message": "Merge pull request #40 from Mwaldemar/activityScriptBack\n\nChanged activity script back to the first version",
-          "distinct": true,
-          "url": "https://api.github.com/repos/Mwaldemar/Resume/commits/185e3af6aee2109e1303deace00ccb367b89e9b8"
-        }
-      ]
-    },
-    "public": true,
-    "created_at": "2025-02-20T16:24:15Z"
   }
 ]
