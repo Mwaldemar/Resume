@@ -15,11 +15,10 @@ export type GitHubRepo = {
 
 type GitHubReposProps = {
     className?: string,
-    hover: boolean,
     repos: GitHubRepo[],
 };
 
-export default function GitHubRepos({ repos, className, hover }: GitHubReposProps) {
+export default function GitHubRepos({ repos, className }: GitHubReposProps) {
     if (!repos || repos.length === 0) {
         return <div>No repositories to show.</div>;
     }
@@ -44,7 +43,7 @@ export default function GitHubRepos({ repos, className, hover }: GitHubReposProp
                             <a className={styles.repoLink} href={repo.html_url} target="_blank" rel="noopener noreferrer">
                                 <div className={styles.repoName}>{repo.name}</div>
                                 <div className={styles.repoDescription}>{repo.description || "No description available"}</div>
-                                <div className={styles.updated}>Updated at: {formatDate(repo.updated_at)}</div>
+                                <div className={styles.updated}>Updated: {formatDate(repo.updated_at)}</div>
                                 <div className={styles.languageContainer}>
                                     {repo.languages?.map(lang => (
                                         <div key={lang} className={clsx(styles.language, languageColors[lang])}>
@@ -52,11 +51,8 @@ export default function GitHubRepos({ repos, className, hover }: GitHubReposProp
                                         </div>
                                     ))}
                                 </div>
-
                                 <div className={styles.seeOnHover}>
-                                    {hover && (
-                                        <div className={styles.hoverText}>Open in GitHub <MoveUpRight /></div>
-                                    )}
+                                    <div className={styles.hoverText}>Open in GitHub <MoveUpRight /></div>
                                 </div>
                             </a>
                         </div>

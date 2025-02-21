@@ -6,12 +6,13 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 70%;
+    width: 75%;
     gap: 40px;
 
     @include respond-to(desktop) {
       flex-direction: row;
       gap: 95px;
+      width: 70%;
     }
 
     .activityWrapper {

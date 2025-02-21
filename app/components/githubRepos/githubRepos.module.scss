@@ -28,6 +28,9 @@
       margin-bottom: 30px;
 
       .repo {
+        &:active {
+          transform: scale(0.98);
+        }
         .repoLink {
           display: flex;
           flex-direction: column;
@@ -40,10 +43,9 @@
           box-shadow: 4px 6px 15px rgba(0, 0, 0, 0.3);
           transition: all 0.3s ease;
 
-          &:hover {
-            transform: scale(1.02);
-
-            @include respond-to(desktop) {
+          @include respond-to(desktop) {
+            &:hover {
+              transform: scale(1.02);
               > .seeOnHover {
                 display: block;
                 position: absolute;
@@ -77,12 +79,12 @@
 
           .languageContainer {
             display: flex;
-            flex-direction: column;
+            flex-direction: row;
             gap: 8px;
+            flex-wrap: wrap;
 
             @include respond-to(desktop) {
-              flex-direction: row;
-              gap: 30px;
+              gap: 20px;
             }
 
             .language {
