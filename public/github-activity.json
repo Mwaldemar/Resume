@@ -1,5 +1,45 @@
 [
   {
+    "id": "46791318553",
+    "type": "PushEvent",
+    "actor": {
+      "id": 102224869,
+      "login": "Mwaldemar",
+      "display_login": "Mwaldemar",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Mwaldemar",
+      "avatar_url": "https://avatars.githubusercontent.com/u/102224869?"
+    },
+    "repo": {
+      "id": 925695263,
+      "name": "Mwaldemar/Resume",
+      "url": "https://api.github.com/repos/Mwaldemar/Resume"
+    },
+    "payload": {
+      "repository_id": 925695263,
+      "push_id": 22771043789,
+      "size": 1,
+      "distinct_size": 1,
+      "ref": "refs/heads/main",
+      "head": "79c10113b67a796cee745481a7f00de102c2c700",
+      "before": "f2e59a6043019209db39a36bc8e7e61ea630876c",
+      "commits": [
+        {
+          "sha": "79c10113b67a796cee745481a7f00de102c2c700",
+          "author": {
+            "email": "github-actions@github.com",
+            "name": "GitHub Actions"
+          },
+          "message": "Update GitHub activity",
+          "distinct": true,
+          "url": "https://api.github.com/repos/Mwaldemar/Resume/commits/79c10113b67a796cee745481a7f00de102c2c700"
+        }
+      ]
+    },
+    "public": true,
+    "created_at": "2025-02-20T19:15:45Z"
+  },
+  {
     "id": "46789770366",
     "type": "PushEvent",
     "actor": {
@@ -1724,31 +1764,5 @@
     },
     "public": true,
     "created_at": "2025-02-20T15:37:14Z"
-  },
-  {
-    "id": "46783245496",
-    "type": "CreateEvent",
-    "actor": {
-      "id": 102224869,
-      "login": "Mwaldemar",
-      "display_login": "Mwaldemar",
-      "gravatar_id": "",
-      "url": "https://api.github.com/users/Mwaldemar",
-      "avatar_url": "https://avatars.githubusercontent.com/u/102224869?"
-    },
-    "repo": {
-      "id": 925695263,
-      "name": "Mwaldemar/Resume",
-      "url": "https://api.github.com/repos/Mwaldemar/Resume"
-    },
-    "payload": {
-      "ref": "activityWorkflowFix",
-      "ref_type": "branch",
-      "master_branch": "main",
-      "description": "Development of resume website",
-      "pusher_type": "user"
-    },
-    "public": true,
-    "created_at": "2025-02-20T15:36:39Z"
   }
 ]
