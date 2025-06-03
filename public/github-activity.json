@@ -1,5 +1,45 @@
 [
   {
+    "id": "50456222432",
+    "type": "PushEvent",
+    "actor": {
+      "id": 102224869,
+      "login": "Mwaldemar",
+      "display_login": "Mwaldemar",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Mwaldemar",
+      "avatar_url": "https://avatars.githubusercontent.com/u/102224869?"
+    },
+    "repo": {
+      "id": 925695263,
+      "name": "Mwaldemar/Resume",
+      "url": "https://api.github.com/repos/Mwaldemar/Resume"
+    },
+    "payload": {
+      "repository_id": 925695263,
+      "push_id": 24672643178,
+      "size": 1,
+      "distinct_size": 1,
+      "ref": "refs/heads/main",
+      "head": "8ab5400e3a13185fb0d33b6ee37bbab22d7266d5",
+      "before": "ba1a36bebb706f5d2f57cac626cfe5bdca7ed45a",
+      "commits": [
+        {
+          "sha": "8ab5400e3a13185fb0d33b6ee37bbab22d7266d5",
+          "author": {
+            "email": "github-actions@github.com",
+            "name": "GitHub Actions"
+          },
+          "message": "Update GitHub activity",
+          "distinct": true,
+          "url": "https://api.github.com/repos/Mwaldemar/Resume/commits/8ab5400e3a13185fb0d33b6ee37bbab22d7266d5"
+        }
+      ]
+    },
+    "public": true,
+    "created_at": "2025-06-03T12:47:40Z"
+  },
+  {
     "id": "50447227912",
     "type": "PushEvent",
     "actor": {
@@ -358,45 +398,5 @@
     },
     "public": true,
     "created_at": "2025-06-02T16:14:14Z"
-  },
-  {
-    "id": "50414588579",
-    "type": "PushEvent",
-    "actor": {
-      "id": 102224869,
-      "login": "Mwaldemar",
-      "display_login": "Mwaldemar",
-      "gravatar_id": "",
-      "url": "https://api.github.com/users/Mwaldemar",
-      "avatar_url": "https://avatars.githubusercontent.com/u/102224869?"
-    },
-    "repo": {
-      "id": 925695263,
-      "name": "Mwaldemar/Resume",
-      "url": "https://api.github.com/repos/Mwaldemar/Resume"
-    },
-    "payload": {
-      "repository_id": 925695263,
-      "push_id": 24652640246,
-      "size": 1,
-      "distinct_size": 1,
-      "ref": "refs/heads/main",
-      "head": "2e15462cb77b39a38fddb3c1b93ee489c7be4009",
-      "before": "0c6d43f44f0b3d6c50841fb67fc2788cf3444dfa",
-      "commits": [
-        {
-          "sha": "2e15462cb77b39a38fddb3c1b93ee489c7be4009",
-          "author": {
-            "email": "github-actions@github.com",
-            "name": "GitHub Actions"
-          },
-          "message": "Update GitHub activity",
-          "distinct": true,
-          "url": "https://api.github.com/repos/Mwaldemar/Resume/commits/2e15462cb77b39a38fddb3c1b93ee489c7be4009"
-        }
-      ]
-    },
-    "public": true,
-    "created_at": "2025-06-02T15:25:14Z"
   }
 ]
