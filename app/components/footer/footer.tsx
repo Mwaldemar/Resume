@@ -10,7 +10,8 @@ export const Footer = () => {
             <div className={styles.container}>
                 <nav className={styles.nav}>
                     <Link href="/">Home</Link>
-                    <Link href="/projects">Projects</Link>
+                    <Link href="/repos">Github Repos</Link>
+                    <Link href="/projects">Project Logs</Link>
                     <Link href="/contact">Contact</Link>
                 </nav>
                 <div className={styles.socials}>
