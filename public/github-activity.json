@@ -1,5 +1,85 @@
 [
   {
+    "id": "50831836740",
+    "type": "PushEvent",
+    "actor": {
+      "id": 102224869,
+      "login": "Mwaldemar",
+      "display_login": "Mwaldemar",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Mwaldemar",
+      "avatar_url": "https://avatars.githubusercontent.com/u/102224869?"
+    },
+    "repo": {
+      "id": 925695263,
+      "name": "Mwaldemar/Resume",
+      "url": "https://api.github.com/repos/Mwaldemar/Resume"
+    },
+    "payload": {
+      "repository_id": 925695263,
+      "push_id": 24860109665,
+      "size": 1,
+      "distinct_size": 1,
+      "ref": "refs/heads/main",
+      "head": "320806210401ff87f7a96fa7dfbacec8212d63d5",
+      "before": "071fb45cd6b6d8cbbb77fd4ecfce6eeda21ded91",
+      "commits": [
+        {
+          "sha": "320806210401ff87f7a96fa7dfbacec8212d63d5",
+          "author": {
+            "email": "304837@via.dk",
+            "name": "Mwaldemar"
+          },
+          "message": "Small fix to my script",
+          "distinct": true,
+          "url": "https://api.github.com/repos/Mwaldemar/Resume/commits/320806210401ff87f7a96fa7dfbacec8212d63d5"
+        }
+      ]
+    },
+    "public": true,
+    "created_at": "2025-06-12T15:25:30Z"
+  },
+  {
+    "id": "50830574869",
+    "type": "PushEvent",
+    "actor": {
+      "id": 102224869,
+      "login": "Mwaldemar",
+      "display_login": "Mwaldemar",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Mwaldemar",
+      "avatar_url": "https://avatars.githubusercontent.com/u/102224869?"
+    },
+    "repo": {
+      "id": 999867814,
+      "name": "Mwaldemar/GameCatalogue",
+      "url": "https://api.github.com/repos/Mwaldemar/GameCatalogue"
+    },
+    "payload": {
+      "repository_id": 999867814,
+      "push_id": 24859521657,
+      "size": 1,
+      "distinct_size": 1,
+      "ref": "refs/heads/main",
+      "head": "a9637c34c4f955e688618f4e76095e5e89f0d9a0",
+      "before": "39b69a3f502379449d7c36b6da1027ac1bcf0ae1",
+      "commits": [
+        {
+          "sha": "a9637c34c4f955e688618f4e76095e5e89f0d9a0",
+          "author": {
+            "email": "304837@via.dk",
+            "name": "Mwaldemar"
+          },
+          "message": "Test: Verify activity feed update on portfolio website",
+          "distinct": true,
+          "url": "https://api.github.com/repos/Mwaldemar/GameCatalogue/commits/a9637c34c4f955e688618f4e76095e5e89f0d9a0"
+        }
+      ]
+    },
+    "public": true,
+    "created_at": "2025-06-12T14:59:53Z"
+  },
+  {
     "id": "50829751074",
     "type": "PushEvent",
     "actor": {
@@ -1684,71 +1764,5 @@
     },
     "public": true,
     "created_at": "2025-06-12T14:18:10Z"
-  },
-  {
-    "id": "50828401659",
-    "type": "CreateEvent",
-    "actor": {
-      "id": 102224869,
-      "login": "Mwaldemar",
-      "display_login": "Mwaldemar",
-      "gravatar_id": "",
-      "url": "https://api.github.com/users/Mwaldemar",
-      "avatar_url": "https://avatars.githubusercontent.com/u/102224869?"
-    },
-    "repo": {
-      "id": 999867814,
-      "name": "Mwaldemar/GameCatalogue",
-      "url": "https://api.github.com/repos/Mwaldemar/GameCatalogue"
-    },
-    "payload": {
-      "ref": "AdminDashboard",
-      "ref_type": "branch",
-      "master_branch": "main",
-      "description": "\"Soon-to-be\" Fullstack project",
-      "pusher_type": "user"
-    },
-    "public": true,
-    "created_at": "2025-06-12T14:17:53Z"
-  },
-  {
-    "id": "50826167691",
-    "type": "PushEvent",
-    "actor": {
-      "id": 102224869,
-      "login": "Mwaldemar",
-      "display_login": "Mwaldemar",
-      "gravatar_id": "",
-      "url": "https://api.github.com/users/Mwaldemar",
-      "avatar_url": "https://avatars.githubusercontent.com/u/102224869?"
-    },
-    "repo": {
-      "id": 925695263,
-      "name": "Mwaldemar/Resume",
-      "url": "https://api.github.com/repos/Mwaldemar/Resume"
-    },
-    "payload": {
-      "repository_id": 925695263,
-      "push_id": 24857500621,
-      "size": 1,
-      "distinct_size": 1,
-      "ref": "refs/heads/main",
-      "head": "1af88f2860e110e6076748dc9eb5841687914c6e",
-      "before": "6964aad8d05167c1e1fadbc06ad9316c6346aba7",
-      "commits": [
-        {
-          "sha": "1af88f2860e110e6076748dc9eb5841687914c6e",
-          "author": {
-            "email": "github-actions@github.com",
-            "name": "GitHub Actions"
-          },
-          "message": "Update GitHub activity",
-          "distinct": true,
-          "url": "https://api.github.com/repos/Mwaldemar/Resume/commits/1af88f2860e110e6076748dc9eb5841687914c6e"
-        }
-      ]
-    },
-    "public": true,
-    "created_at": "2025-06-12T13:34:51Z"
   }
 ]
