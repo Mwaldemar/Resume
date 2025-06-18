@@ -1,5 +1,45 @@
 [
   {
+    "id": "51014896649",
+    "type": "PushEvent",
+    "actor": {
+      "id": 102224869,
+      "login": "Mwaldemar",
+      "display_login": "Mwaldemar",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Mwaldemar",
+      "avatar_url": "https://avatars.githubusercontent.com/u/102224869?"
+    },
+    "repo": {
+      "id": 925695263,
+      "name": "Mwaldemar/Resume",
+      "url": "https://api.github.com/repos/Mwaldemar/Resume"
+    },
+    "payload": {
+      "repository_id": 925695263,
+      "push_id": 24954153345,
+      "size": 1,
+      "distinct_size": 1,
+      "ref": "refs/heads/main",
+      "head": "e03b5bdc7b5300347f6cb2a0c4aa7f441435e1bd",
+      "before": "97b28b588bfd91dc92cbc07e32400b21f6026c87",
+      "commits": [
+        {
+          "sha": "e03b5bdc7b5300347f6cb2a0c4aa7f441435e1bd",
+          "author": {
+            "email": "github-actions@github.com",
+            "name": "GitHub Actions"
+          },
+          "message": "Update GitHub repositories",
+          "distinct": true,
+          "url": "https://api.github.com/repos/Mwaldemar/Resume/commits/e03b5bdc7b5300347f6cb2a0c4aa7f441435e1bd"
+        }
+      ]
+    },
+    "public": true,
+    "created_at": "2025-06-17T16:13:59Z"
+  },
+  {
     "id": "50962736607",
     "type": "PushEvent",
     "actor": {
@@ -1048,31 +1088,5 @@
     },
     "public": true,
     "created_at": "2025-06-12T15:44:45Z"
-  },
-  {
-    "id": "50832714586",
-    "type": "CreateEvent",
-    "actor": {
-      "id": 102224869,
-      "login": "Mwaldemar",
-      "display_login": "Mwaldemar",
-      "gravatar_id": "",
-      "url": "https://api.github.com/users/Mwaldemar",
-      "avatar_url": "https://avatars.githubusercontent.com/u/102224869?"
-    },
-    "repo": {
-      "id": 999867814,
-      "name": "Mwaldemar/GameCatalogue",
-      "url": "https://api.github.com/repos/Mwaldemar/GameCatalogue"
-    },
-    "payload": {
-      "ref": "ReviewService",
-      "ref_type": "branch",
-      "master_branch": "main",
-      "description": "\"Soon-to-be\" Fullstack project",
-      "pusher_type": "user"
-    },
-    "public": true,
-    "created_at": "2025-06-12T15:44:29Z"
   }
 ]
