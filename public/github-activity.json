@@ -1,5 +1,45 @@
 [
   {
+    "id": "51176884520",
+    "type": "PushEvent",
+    "actor": {
+      "id": 102224869,
+      "login": "Mwaldemar",
+      "display_login": "Mwaldemar",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Mwaldemar",
+      "avatar_url": "https://avatars.githubusercontent.com/u/102224869?"
+    },
+    "repo": {
+      "id": 925695263,
+      "name": "Mwaldemar/Resume",
+      "url": "https://api.github.com/repos/Mwaldemar/Resume"
+    },
+    "payload": {
+      "repository_id": 925695263,
+      "push_id": 25036131357,
+      "size": 1,
+      "distinct_size": 1,
+      "ref": "refs/heads/main",
+      "head": "ed416e64d62608c5e7eaf635e5471a77db749524",
+      "before": "6c25f7a39ad62341d88bac9075b2ee0ddbee37f5",
+      "commits": [
+        {
+          "sha": "ed416e64d62608c5e7eaf635e5471a77db749524",
+          "author": {
+            "email": "github-actions@github.com",
+            "name": "GitHub Actions"
+          },
+          "message": "Update GitHub repositories",
+          "distinct": true,
+          "url": "https://api.github.com/repos/Mwaldemar/Resume/commits/ed416e64d62608c5e7eaf635e5471a77db749524"
+        }
+      ]
+    },
+    "public": true,
+    "created_at": "2025-06-21T16:11:57Z"
+  },
+  {
     "id": "51154259998",
     "type": "PushEvent",
     "actor": {
@@ -358,55 +398,5 @@
     },
     "public": true,
     "created_at": "2025-06-12T16:13:35Z"
-  },
-  {
-    "id": "50832731034",
-    "type": "PushEvent",
-    "actor": {
-      "id": 102224869,
-      "login": "Mwaldemar",
-      "display_login": "Mwaldemar",
-      "gravatar_id": "",
-      "url": "https://api.github.com/users/Mwaldemar",
-      "avatar_url": "https://avatars.githubusercontent.com/u/102224869?"
-    },
-    "repo": {
-      "id": 999867814,
-      "name": "Mwaldemar/GameCatalogue",
-      "url": "https://api.github.com/repos/Mwaldemar/GameCatalogue"
-    },
-    "payload": {
-      "repository_id": 999867814,
-      "push_id": 24860521127,
-      "size": 2,
-      "distinct_size": 1,
-      "ref": "refs/heads/main",
-      "head": "3720f9caa2c87f88bcf1df1757f16392af13336b",
-      "before": "a9637c34c4f955e688618f4e76095e5e89f0d9a0",
-      "commits": [
-        {
-          "sha": "cf35b9f4ed48228c410c26f86d97688fed72564c",
-          "author": {
-            "email": "304837@via.dk",
-            "name": "Mwaldemar"
-          },
-          "message": "feat: Added ReviewService",
-          "distinct": false,
-          "url": "https://api.github.com/repos/Mwaldemar/GameCatalogue/commits/cf35b9f4ed48228c410c26f86d97688fed72564c"
-        },
-        {
-          "sha": "3720f9caa2c87f88bcf1df1757f16392af13336b",
-          "author": {
-            "email": "102224869+Mwaldemar@users.noreply.github.com",
-            "name": "Mikkel W. Johannessen"
-          },
-          "message": "Merge pull request #3 from Mwaldemar/ReviewService\n\nfeat: Added ReviewService",
-          "distinct": true,
-          "url": "https://api.github.com/repos/Mwaldemar/GameCatalogue/commits/3720f9caa2c87f88bcf1df1757f16392af13336b"
-        }
-      ]
-    },
-    "public": true,
-    "created_at": "2025-06-12T15:44:51Z"
   }
 ]
