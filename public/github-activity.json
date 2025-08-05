@@ -1,5 +1,45 @@
 [
   {
+    "id": "52926244723",
+    "type": "PushEvent",
+    "actor": {
+      "id": 102224869,
+      "login": "Mwaldemar",
+      "display_login": "Mwaldemar",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Mwaldemar",
+      "avatar_url": "https://avatars.githubusercontent.com/u/102224869?"
+    },
+    "repo": {
+      "id": 925695263,
+      "name": "Mwaldemar/Resume",
+      "url": "https://api.github.com/repos/Mwaldemar/Resume"
+    },
+    "payload": {
+      "repository_id": 925695263,
+      "push_id": 25919776309,
+      "size": 1,
+      "distinct_size": 1,
+      "ref": "refs/heads/main",
+      "head": "b0ace9f4e13cc67f7d53e7d714841ced72ef70dd",
+      "before": "67191de7383bd103990b871ecfc8ca21f15ddc70",
+      "commits": [
+        {
+          "sha": "b0ace9f4e13cc67f7d53e7d714841ced72ef70dd",
+          "author": {
+            "email": "github-actions@github.com",
+            "name": "GitHub Actions"
+          },
+          "message": "Update GitHub repositories",
+          "distinct": true,
+          "url": "https://api.github.com/repos/Mwaldemar/Resume/commits/b0ace9f4e13cc67f7d53e7d714841ced72ef70dd"
+        }
+      ]
+    },
+    "public": true,
+    "created_at": "2025-08-04T16:16:16Z"
+  },
+  {
     "id": "52885297080",
     "type": "PushEvent",
     "actor": {
@@ -358,45 +398,5 @@
     },
     "public": true,
     "created_at": "2025-07-23T16:14:50Z"
-  },
-  {
-    "id": "52403109860",
-    "type": "PushEvent",
-    "actor": {
-      "id": 102224869,
-      "login": "Mwaldemar",
-      "display_login": "Mwaldemar",
-      "gravatar_id": "",
-      "url": "https://api.github.com/users/Mwaldemar",
-      "avatar_url": "https://avatars.githubusercontent.com/u/102224869?"
-    },
-    "repo": {
-      "id": 925695263,
-      "name": "Mwaldemar/Resume",
-      "url": "https://api.github.com/repos/Mwaldemar/Resume"
-    },
-    "payload": {
-      "repository_id": 925695263,
-      "push_id": 25655512086,
-      "size": 1,
-      "distinct_size": 1,
-      "ref": "refs/heads/main",
-      "head": "2f9a43b2331970a9f8b5b478ceb62e6dd86f3498",
-      "before": "40288bc1c00c60f6e7009a8ceb2e1198afe35541",
-      "commits": [
-        {
-          "sha": "2f9a43b2331970a9f8b5b478ceb62e6dd86f3498",
-          "author": {
-            "email": "github-actions@github.com",
-            "name": "GitHub Actions"
-          },
-          "message": "Update GitHub repositories",
-          "distinct": true,
-          "url": "https://api.github.com/repos/Mwaldemar/Resume/commits/2f9a43b2331970a9f8b5b478ceb62e6dd86f3498"
-        }
-      ]
-    },
-    "public": true,
-    "created_at": "2025-07-22T16:14:32Z"
   }
 ]
