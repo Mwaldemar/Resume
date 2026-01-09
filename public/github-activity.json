@@ -1,5 +1,31 @@
 [
   {
+    "id": "7329524888",
+    "type": "PushEvent",
+    "actor": {
+      "id": 102224869,
+      "login": "Mwaldemar",
+      "display_login": "Mwaldemar",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/Mwaldemar",
+      "avatar_url": "https://avatars.githubusercontent.com/u/102224869?"
+    },
+    "repo": {
+      "id": 925695263,
+      "name": "Mwaldemar/Resume",
+      "url": "https://api.github.com/repos/Mwaldemar/Resume"
+    },
+    "payload": {
+      "repository_id": 925695263,
+      "push_id": 29624518054,
+      "ref": "refs/heads/main",
+      "head": "ffca721bd82e32955d7885b6817dab402f61404f",
+      "before": "d58994abf15b90f25e92313c7b57e1cb1f56b288"
+    },
+    "public": true,
+    "created_at": "2026-01-09T16:15:23Z"
+  },
+  {
     "id": "7297816965",
     "type": "PushEvent",
     "actor": {
@@ -232,31 +258,5 @@
     },
     "public": true,
     "created_at": "2025-12-31T16:14:54Z"
-  },
-  {
-    "id": "7083377228",
-    "type": "PushEvent",
-    "actor": {
-      "id": 102224869,
-      "login": "Mwaldemar",
-      "display_login": "Mwaldemar",
-      "gravatar_id": "",
-      "url": "https://api.github.com/users/Mwaldemar",
-      "avatar_url": "https://avatars.githubusercontent.com/u/102224869?"
-    },
-    "repo": {
-      "id": 925695263,
-      "name": "Mwaldemar/Resume",
-      "url": "https://api.github.com/repos/Mwaldemar/Resume"
-    },
-    "payload": {
-      "repository_id": 925695263,
-      "push_id": 29377919445,
-      "ref": "refs/heads/main",
-      "head": "4d3cb5b5df183b607634c11bd4ad25a9dba36d8c",
-      "before": "74511377ec8a19f7862a3e2f06318c2952dbe9b1"
-    },
-    "public": true,
-    "created_at": "2025-12-30T16:15:14Z"
   }
 ]
