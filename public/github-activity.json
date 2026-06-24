@@ -24,31 +24,5 @@
     },
     "public": true,
     "created_at": "2026-05-25T17:27:07Z"
-  },
-  {
-    "id": "12303370893",
-    "type": "PushEvent",
-    "actor": {
-      "id": 102224869,
-      "login": "Mwaldemar",
-      "display_login": "Mwaldemar",
-      "gravatar_id": "",
-      "url": "https://api.github.com/users/Mwaldemar",
-      "avatar_url": "https://avatars.githubusercontent.com/u/102224869?"
-    },
-    "repo": {
-      "id": 925695263,
-      "name": "Mwaldemar/Resume",
-      "url": "https://api.github.com/repos/Mwaldemar/Resume"
-    },
-    "payload": {
-      "repository_id": 925695263,
-      "push_id": 34593579153,
-      "ref": "refs/heads/main",
-      "head": "35775ad4593483827c5805ac92dd3a2df13cd25c",
-      "before": "639c014c2c6bfc76d88a11e1251cffa5ef8a6c4c"
-    },
-    "public": true,
-    "created_at": "2026-05-24T16:51:23Z"
   }
 ]
